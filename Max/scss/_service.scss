@@ -1,0 +1,68 @@
+.what_we_do {
+  .col-sm-8 {margin-bottom: 100px;}
+  ul {
+    margin-top: 50px;
+    list-style: none;
+    padding-left: 0;
+    li{
+      background: url("../img/icon-check.png") center left no-repeat;
+      display: block;
+      padding-left: 20px;
+    }
+  }
+}
+
+.service {
+  h4 {
+    &:before {
+      content: '';
+      background: url("../img/icon-servise.png") 0 0 no-repeat;
+      width: 67px;
+      height: 57px;
+      display: block;
+      margin: 0 auto 30px auto;
+    }
+    &.service-icon-puls:before {@include bgpx(0);}
+    &.service-icon-limit:before {@include bgpx(-67);}
+    &.service-icon-idea:before {@include bgpx(-134);}
+    &.service-icon-support:before {@include bgpx(-201);}
+  }
+}
+
+.pricing {
+  .col-sm-8 {margin-bottom: 100px;}
+  .price_tab {
+    padding: 30px 30px 40px;
+    border-top: 5px solid $second-color;
+    &:hover {
+      @include box-shadow(0,0,50px,rgba(0,0,0,.25));
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      right: 15px;
+      top: 0;
+      border: 7px solid transparent;
+      border-top: 7px solid $second-color;
+      border-right: 7px solid $second-color;
+    }
+    h2:before {content: none;}
+    .monthly {
+      @include ffM;
+      color: #fff;
+      background: $second-color;
+      padding: 7px 25px;
+    }
+    ul {
+      padding: 55px 0;
+      margin: 0;
+      list-style: none;
+      li{
+        background: url("../img/icon-check.png") center left no-repeat;
+        display: block;
+        padding-left: 20px;
+        line-height: 2.5;
+      }
+    }
+  }
+}
