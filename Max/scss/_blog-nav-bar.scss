@@ -1,0 +1,67 @@
+.nav-bar {
+  input {
+    @include border-radius(0);
+    font-weight: bold;
+    border: 0;
+    box-shadow: none;
+    background: #ececec;
+    font-size: 12px;
+    @include placeholder(#bbb);
+    height: 40px;
+    &:focus {
+      box-shadow: none;
+    }
+    &+span>button{
+      background: #ececec;
+      height: 40px;
+      padding: 0 15px;
+    }
+  }
+  section { margin-top: 50px;}
+  .posts {
+    button {
+      width: 33.3333333%;
+      padding: 20px 0;
+      display: block;
+      float: left;
+      background: none;
+      color: $third-color;
+      border-bottom: 2px solid #e6e6e6;
+      margin-bottom: 30px;
+      font-size: 12px;
+      &.posts-btn-active {
+        color: $main-color;
+        border-bottom-color: $second-color;
+      }
+    }
+    div {
+      display: inline-block;
+      height: 80px;
+      padding-left: 90px;
+      margin-bottom: 10px;
+    }
+    span {font-size: 12px;}
+  }
+  .min-post-name1 {background: url("../img/min-post-name1.jpg") 0 0 no-repeat;}
+  .min-post-name2 {background: url("../img/min-post-name2.jpg") 0 0 no-repeat;}
+  .min-post-name3 {background: url("../img/min-post-name3.jpg") 0 0 no-repeat;}
+
+  .table td{
+    border-bottom: 1px solid #bfbfbf;
+    border-top: none;
+    padding: 15px;
+    &:last-child {text-align: right}
+  }
+  .tags a {
+    background: #e5e5e5;
+    color: $third-color;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    @include ffM;
+    font-size: 12px;
+    display: inline-block;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
