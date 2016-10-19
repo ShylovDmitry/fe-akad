@@ -28,18 +28,26 @@ $third-color: #999;
   border-radius: $radius+px;
 }
 
-@mixin box-shadow($x, $y, $radius, $color) {
+@mixin box-shadow($x:0, $y:0, $radius:10px, $color:rgba(0,0,0,.25)) {
   -webkit-box-shadow: $x $y $radius $color;
   -moz-box-shadow: $x $y $radius $color;
   box-shadow: $x $y $radius $color;
 }
 
-@mixin placeholder($color){
+@mixin placeholder($color:#ccc){
   &::-webkit-input-placeholder {color:$color; text-transform: uppercase;}
   &::-moz-placeholder {color:$color; text-transform: uppercase;}
   &:-moz-placeholder {color:$color; text-transform: uppercase;}
   &:-ms-input-placeholder {color:$color; text-transform: uppercase;}
 }
+
+@mixin transition($property:all, $duration:0.2, $transition:ease-out, $delay:0) {
+  -webkit-transition: $property, $duration+s, $transition, $delay+s;
+  -moz-transition: $property, $duration+s, $transition, $delay+s;
+  -o-transition: $property, $duration+s, $transition, $delay+s;
+  transition: $property, $duration+s, $transition, $delay+s;
+}
+
 
 h1, h2, h3, h4, h5 {
   @include ffM;
@@ -82,6 +90,8 @@ button {
   padding: 15px 30px;
   font-weight: bold;
   text-transform: uppercase;
+  @include transition();
+  &:hover {@include box-shadow();}
   &.white {
     background: #fff;
     color: $second-color;
@@ -111,6 +121,7 @@ header {
         position: absolute;
         top: 11px;
         opacity: 0;
+        @include transition();
       }
       &:hover {
         background: none;
@@ -180,6 +191,10 @@ footer {
   margin: 50px 0 30px 0;
   text-transform: uppercase;
   color: #9a9a9a;
+  div a.developer {
+    @include transition();
+    &:hover {color: $second-color;}
+  }
   nav ul {
     list-style: none;
     margin: 0;
@@ -206,6 +221,7 @@ footer {
         display: inline-block;
         position: absolute;
         bottom: -10px;
+        @include transition();
       }
       &:hover {
         text-decoration: none;
@@ -232,10 +248,10 @@ footer {
     height: 16px;
     display: block;
   }
-  .icon-fb {@include icon(8,0)}
-  .icon-twitter {@include icon(17,-10)}
-  .icon-you-tube {@include icon(20,-30)}
-  .icon-linkedin {@include icon(15,-51)}
-  .icon-pinterest {@include icon(17,-69)}
-  .icon-instagram {@include icon(15,-88)}
+  .icon-fb {@include icon(8,0);}
+  .icon-twitter {@include icon(17,-10);}
+  .icon-you-tube {@include icon(20,-30);}
+  .icon-linkedin {@include icon(15,-51);}
+  .icon-pinterest {@include icon(17,-69);}
+  .icon-instagram {@include icon(15,-88);}
 }
