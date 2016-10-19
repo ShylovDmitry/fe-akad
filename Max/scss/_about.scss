@@ -46,6 +46,7 @@
       width: 15px;
       border: none;
       background: $main-color;
+      @include transition();
       &.active {
         border: none;
         background: $second-color;
@@ -56,11 +57,32 @@
   }
   .ava {
     @include border-radius(50);
-    margin:0 auto 20px;
+    margin: 0 auto 20px;
   }
   button {
     padding: 5px 15px;
     margin-bottom: 5px;
   }
-  .col-sm-2 {margin-bottom: 30px;}
+  .partner {
+    a {
+      margin-bottom: 30px;
+      display: block;
+      width: 163px;
+      height: 98px;
+      border: 1px solid #ccc;
+      &.archery {background: url("../img/reviews/partners/archery.png")}
+      &.pacificana {background: url("../img/reviews/partners/pacificana.png")}
+      &.merchant {background: url("../img/reviews/partners/merchant.png")}
+      &.atelier {background: url("../img/reviews/partners/atelier.png")}
+      &.steak {background: url("../img/reviews/partners/steak.png")}
+      &.wattson {background: url("../img/reviews/partners/wattson.png")}
+      i {@include transition();}
+      &:hover i {
+        background: rgba(0,0,0,.1);
+        display: block;
+        width: 161px;
+        height: 96px;
+      }
+    }
+  }
 }

@@ -193,7 +193,7 @@ footer {
   color: #9a9a9a;
   div a.developer {
     @include transition();
-    &:hover {color: $second-color;}
+    &:hover {color:$second-color;}
   }
   nav ul {
     list-style: none;
@@ -247,11 +247,18 @@ footer {
     background: url("../img/icon-social.png") 0 0 no-repeat;
     height: 16px;
     display: block;
+    @include transition();
+    &:hover {
+      -ms-background-position-y: -20px;
+      background-position-y: -20px;
+    }
   }
-  .icon-fb {@include icon(8,0);}
-  .icon-twitter {@include icon(17,-10);}
-  .icon-you-tube {@include icon(20,-30);}
-  .icon-linkedin {@include icon(15,-51);}
-  .icon-pinterest {@include icon(17,-69);}
-  .icon-instagram {@include icon(15,-88);}
+  .icon {
+    &-fb {@include icon(8,0);}
+    &-twitter {@include icon(17,-10);}
+    &-you-tube {@include icon(20,-30);}
+    &-linkedin {@include icon(15,-51);}
+    &-pinterest {@include icon(17,-69);}
+    &-instagram {@include icon(15,-88);}
+  }
 }
