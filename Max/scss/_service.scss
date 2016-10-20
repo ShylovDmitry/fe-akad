@@ -1,7 +1,13 @@
 .what_we_do {
   .description {margin-bottom: 100px;}
+  position: relative;
+  overflow: hidden;
   ul {
-    margin-top: 50px;
+    float: left;
+    margin: 50px 50px 0 0;
+    @media (min-width: $screen-sm-min) {
+      margin-right: 10px;
+    }
     list-style: none;
     padding-left: 0;
     li{
@@ -9,6 +15,10 @@
       display: block;
       padding-left: 20px;
     }
+  }
+  img {
+
+    overflow: hidden;
   }
 }
 
@@ -70,4 +80,5 @@
       transform: scale(1.01);
     }
   }
+  .price-block {margin-bottom: 20px;}
 }

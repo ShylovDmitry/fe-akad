@@ -1,7 +1,10 @@
 .post {
   margin-bottom: 100px;
   &:last-child {margin-bottom: 0;}
-  img {margin-bottom: 30px;}
+  img {
+    margin-bottom: 30px;
+    width: 100%;
+  }
   .post-data {
     background: $second-color;
     @include ffM;
@@ -47,6 +50,7 @@
 }
 
 .post_nav {
+  margin-bottom: 50px;
   a {
     @include ffM;
     font-size: 12px;

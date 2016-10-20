@@ -1,6 +1,5 @@
 .index-main {
   margin-top: -100px;
-  background: url("../img/index-main-bg.jpg");
   height: 850px;
   .index-block {
     margin-top: 155px;
@@ -12,20 +11,42 @@
     font-size: 18px;
     padding: 5px 15px;
     text-transform: uppercase;
+    display: block;
+    width: 100px;
+    margin: auto auto -4px;
   }
   h1 {
     border: 10px solid;
     font-size: 48px;
-    padding: 10px 0;
     margin: 3px 0 30px;
+    display: inline-block;
+    padding: 10px 10px;
+    @media (min-width: $screen-xs-min) {
+      padding: 20px 35px;
+    }
   }
   p {font-size: 16px;}
 }
 
 .history {
   margin-top: -300px;
-  background: url("../img/history.png") left top no-repeat;
-  height: 400px;
+  @media (min-width: $screen-sm-min) {
+    background: url("../img/history.png") left top no-repeat;
+    -webkit-background-size: 380px;
+    background-size: 380px;
+  }
+  @media (min-width: $screen-md-min) {
+    -webkit-background-size: 480px;
+    background-size: 480px;
+    min-height: 500px;
+  }
+  h2 {
+    margin-top: 20px;
+    text-align: center;
+    @media (min-width: $screen-sm-min) {
+      text-align: left;
+    }
+  }
   p {
     font-size: 16px;
     margin-bottom: 30px;
@@ -38,11 +59,22 @@
 }
 
 .why {
-  background: url("../img/how_bg.jpg") no-repeat right bottom;
   min-height: 690px;
+  @media (min-width: $screen-sm-min) {
+    background: url("../img/how_bg.jpg") no-repeat 400px 215px;
+  }
+  @media (min-width: $screen-md-min) {
+    background-position: 550px 215px;
+  }
+  @media (min-width: $screen-lg-min) {
+    background-position: right bottom;
+  }
   p {margin-bottom: 75px;}
   .why-block {
-    margin: 20px 0 40px 35px;
+    margin: 0 0 20px;
+    @media (min-width: $screen-md-min) {
+      margin: 20px 0 40px 35px;
+    }
   }
   h4 {
     @extend h1;

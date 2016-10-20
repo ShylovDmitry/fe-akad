@@ -38,6 +38,9 @@
       padding-top: 130px;
       background: rgba(255,255,255,.75);
       @include transition();
+      margin: auto;
+      left: 0;
+      right: 0;
       h5 {
         opacity: 0;
         padding-top: 20px;
@@ -45,12 +48,12 @@
       }
       span {
         opacity: 0;
-        margin-top: 20px;
         background: $second-color;
-        @include ffM;
-        color: #fff;
         padding: 5px 5px;
         font-size: 12px;
+        color: #fff;
+        @include ffM;
+        margin-top: 20px;
         display: inline-block;
         @include transition($delay:.6);
       }
@@ -67,18 +70,25 @@
       }
     }
   }
-
   .team_read_more {
     background: #efeff0;
     font-size: 17px;
     padding: 65px 30px;
     vertical-align: middle;
-    button {float: right;
-      margin-top: -14px;}
+    p {display: inline-block;}
+    button {
+      float: right;
+    }
   }
 }
 
 .reviews {
+  .slide {
+    margin-bottom: 50px;
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: 0;
+    }
+  }
   .carousel-indicators {
     bottom: -40px;
     li {
@@ -106,7 +116,7 @@
   }
   .partner {
     a {
-      margin-bottom: 30px;
+      margin: 0 auto 30px;
       display: block;
       width: 163px;
       height: 98px;
