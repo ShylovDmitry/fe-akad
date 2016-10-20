@@ -3,7 +3,7 @@
 }
 
 .some_benefits {
-  .col-sm-8 {margin-bottom: 100px;}
+  .description {margin-bottom: 100px;}
   h4 {
     &:before {
       content: '';
@@ -21,11 +21,11 @@
     &.some-icon-design:before {@include bgpx(-160);}
     &.some-icon-support:before {@include bgpx(- 200);}
   }
-  .col-sm-4 + .clearfix {margin-bottom: 50px;}
+  .block-clear {margin-bottom: 50px;}
 }
 
 .team {
-  .col-sm-8 {margin-bottom: 100px;}
+  .description {margin-bottom: 100px;}
   .member {
     position: relative;
     margin-bottom: 30px;
