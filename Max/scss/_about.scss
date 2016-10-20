@@ -26,7 +26,48 @@
 
 .team {
   .col-sm-8 {margin-bottom: 100px;}
-  img {margin-bottom: 30px;}
+  .member {
+    position: relative;
+    margin-bottom: 30px;
+    .member_hover {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      width: 263px;
+      height: 333px;
+      padding-top: 130px;
+      background: rgba(255,255,255,.75);
+      @include transition();
+      h5 {
+        opacity: 0;
+        padding-top: 20px;
+        @include transition($delay:.4);
+      }
+      span {
+        opacity: 0;
+        margin-top: 20px;
+        background: $second-color;
+        @include ffM;
+        color: #fff;
+        padding: 5px 5px;
+        font-size: 12px;
+        display: inline-block;
+        @include transition($delay:.6);
+      }
+    }
+    &:hover {
+      .member_hover {opacity: 1;}
+      h5 {
+        opacity: 1;
+        padding-top: 0;
+      }
+      span {
+        opacity: 1;
+        margin-top: 0;
+      }
+    }
+  }
+
   .team_read_more {
     background: #efeff0;
     font-size: 17px;

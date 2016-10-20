@@ -41,11 +41,23 @@ $third-color: #999;
   &:-ms-input-placeholder {color:$color; text-transform: uppercase;}
 }
 
-@mixin transition($property:all, $duration:0.2, $transition:ease-out, $delay:0) {
-  -webkit-transition: $property, $duration+s, $transition, $delay+s;
-  -moz-transition: $property, $duration+s, $transition, $delay+s;
-  -o-transition: $property, $duration+s, $transition, $delay+s;
-  transition: $property, $duration+s, $transition, $delay+s;
+@mixin transition($property:all, $duration:.2, $function:ease-out, $delay:0) {
+  -webkit-transition-property: $property;
+  -webkit-transition-duration: $duration+s;
+  -webkit-transition-timing-function: $function;
+  -webkit-transition-delay: $delay+s;
+  -moz-transition-property: $property;
+  -moz-transition-duration: $duration+s;
+  -moz-transition-timing-function: $function;
+  -moz-transition-delay: $delay+s;
+  -o-transition-property: $property;
+  -o-transition-duration: $duration+s;
+  -o-transition-timing-function: $function;
+  -o-transition-delay: $delay+s;
+  transition-property: $property;
+  transition-duration: $duration+s;
+  transition-timing-function: $function;
+  transition-delay: $delay+s;
 }
 
 
