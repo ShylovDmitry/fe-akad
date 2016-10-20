@@ -101,11 +101,15 @@
     height: 40px;
     &:focus {
       box-shadow: none;
+      background: #f6f6f6;
     }
     &+span>button{
       background: #ececec;
       height: 40px;
       padding: 0 15px;
+      &:hover {
+        box-shadow: none;
+      }
     }
   }
   section { margin-top: 50px;}
@@ -120,6 +124,9 @@
       border-bottom: 2px solid #e6e6e6;
       margin-bottom: 30px;
       font-size: 12px;
+      &:hover {
+        box-shadow: none;
+      }
       &.posts-btn-active {
         color: $main-color;
         border-bottom-color: $second-color;
@@ -128,31 +135,44 @@
     div {
       display: inline-block;
       height: 80px;
-      padding-left: 90px;
       margin-bottom: 10px;
+      .min-post-hover {
+        padding-left: 90px;
+      }
     }
     span {font-size: 12px;}
   }
+  .min-post-hover:hover {background: rgba(255,255,255,.5);}
   .min-post-name1 {background: url("../img/min-post-name1.jpg") 0 0 no-repeat;}
   .min-post-name2 {background: url("../img/min-post-name2.jpg") 0 0 no-repeat;}
   .min-post-name3 {background: url("../img/min-post-name3.jpg") 0 0 no-repeat;}
 
-  .table td{
-    border-bottom: 1px solid #bfbfbf;
-    border-top: none;
-    padding: 15px;
-    &:last-child {text-align: right}
+  .categories {
+    a {
+      display: block;
+      padding: 15px;
+      border-bottom: 1px solid #bfbfbf;
+      @include transition();
+      &:hover {border-color: $second-color;}
+    }
   }
+
   .tags a {
     background: #e5e5e5;
     color: $third-color;
-    padding: 10px 15px;
+    padding: 7px 15px;
     margin-bottom: 5px;
     @include ffM;
     font-size: 12px;
     display: inline-block;
+    @include transition();
     &:hover {
-      text-decoration: none;
+      background: #efefef;
+      color: $main-color;
     }
+  }
+
+  .archives {
+    @extend .categories;
   }
 }
