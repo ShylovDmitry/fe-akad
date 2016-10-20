@@ -1,0 +1,54 @@
+.why-choose {
+  margin:250px 0 150px 0;
+
+  h2 {
+    background: bottom left url("../img/shadow.png") no-repeat;
+    background-size: 90px;
+    background-position: 40% 20px;
+    padding: 0 0 5px 5px;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $hcolor;
+    text-align: center;
+  }
+   p {
+    text-align: center;
+    font-size: 15px;
+    color: #808080;
+    line-height: 30px;
+    font-weight: lighter;
+     padding-bottom: 120px;
+     margin:0 20%;
+  }
+  img {
+    padding-top:20px;
+  }
+  h4{
+    color: $hcolor;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top:20px;
+    margin:0;
+    font-size:20px;
+  }
+  ul {
+    list-style-type:none;
+    padding:0;
+    margin:25px 0;
+
+   li {
+     font-weight: lighter;
+     text-transform: uppercase;
+     color:grey;
+     font-size:15px;
+     line-height: 35px;
+   }
+  }
+
+
+
+
+
+
+}

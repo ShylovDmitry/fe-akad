@@ -1,0 +1,68 @@
+.contacts {
+  margin:150px 0;
+
+  #map {
+    margin-top:30px;
+    width:555px;
+    height:841px;
+    -webkit-filter: grayscale(100%);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);
+  }
+  .form-inline {
+    input {
+      width:343px;
+      height: 50px;
+      border-radius: 0;
+      padding-left: 25px;
+      margin-top:30px;
+      background-color: #f6f6f6;
+
+    }
+    #name {
+      margin-right:30px;
+    }
+
+  }
+  .form-group {
+    input {
+      margin:30px 0;
+      border-radius: 0;
+      padding-left: 25px;
+      height: 50px;
+      background-color: #f6f6f6;
+    }
+    #text-area {
+      padding-bottom: 200px;
+      padding-top:20px;
+    }
+
+  }
+  .btn-lg {
+    color: white;
+    font-size: 15px;
+    background-color: $special-color;
+    padding: 20px 68px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+  }
+  .btn-lg:hover {
+    color:white;
+    background-color: $special-color;
+    transition: 0.5s;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  }
+  h4 {
+    margin-top:80px;
+    color: $hcolor;
+    text-transform: uppercase;
+    padding: 20px 0;
+    font-weight: bold;
+  }
+  p {
+    font-size: 17px;
+    color: #808080;
+    line-height: 35px;
+    font-weight: lighter;
+  }
+}

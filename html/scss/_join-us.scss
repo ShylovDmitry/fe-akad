@@ -23,7 +23,7 @@
       }
       .btn-lg:hover {
         color: $special-color;
-        transition: 0.9s;
+        transition: 0.5s;
         box-shadow: 0 0 15px rgba(0,0,0,0.3);
       }
 
@@ -54,7 +54,6 @@
       height:60px;
       width:80%;
       border-radius: 0;
-      text-transform: uppercase;
       padding-left:30px;
     }
     .btn-lg {
@@ -68,7 +67,7 @@
       margin-left:-5px;
     }
     .btn-lg:hover {
-      transition: 0.9s;
+      transition: 0.5s;
       box-shadow: 0 0 15px rgba(0,0,0,0.3);
     }
 

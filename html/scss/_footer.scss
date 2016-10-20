@@ -13,7 +13,9 @@ footer {
             color: #adadad;
           }
           a:hover {
+            text-decoration: none;
             color: $special-color;
+            transition: 0.3s;
           }
         }
       }

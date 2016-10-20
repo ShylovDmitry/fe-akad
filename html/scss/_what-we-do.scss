@@ -1,0 +1,77 @@
+.what-we-do {
+  margin: 150px 0;
+  .col-md-12 {
+    h2 {
+      background: bottom left url("../img/shadow.png") no-repeat;
+      background-size: 90px;
+      background-position: 43% 20px;
+      padding: 0 0 5px 5px;
+      font-size: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $hcolor;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      font-size: 15px;
+      color: #808080;
+      line-height: 30px;
+      font-weight: lighter;
+      margin: 0 20%;
+      padding-bottom: 120px;
+    }
+  }
+  .col-md-6 {
+    p {
+      font-size: 15px;
+      color: #808080;
+      line-height: 30px;
+      font-weight: lighter;
+      padding-bottom: 30px;
+    }
+    img {
+      padding-top: 12px;
+      padding-left: 15px;
+      margin-bottom:150px;
+    }
+    ul {
+      float:left;
+      list-style-type: none;
+      padding: 0;
+      padding-right:20%;
+
+      li {
+        background: left url("../img/icon-hint.png") no-repeat;
+        padding-left:25px;
+        font-size: 15px;
+        color: #808080;
+        line-height: 35px;
+        font-weight: lighter;
+      }
+    }
+
+  }
+  .col-md-3 {
+
+    img {
+      display:block;
+      margin: 0 auto;
+    }
+    h4 {
+      text-align:center;
+      color: $hcolor;
+      text-transform: uppercase;
+      padding: 20px 0;
+      font-weight: bold;
+    }
+    p {
+      margin:0 18%;
+      text-align: center;
+      font-size: 14px;
+      color: #808080;
+      line-height: 30px;
+      font-weight: lighter;
+    }
+  }
+}
