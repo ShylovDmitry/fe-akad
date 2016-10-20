@@ -32,19 +32,17 @@
 .pricing {
   .col-sm-8 {margin-bottom: 100px;}
   .price_tab {
+    position: relative;
     padding: 30px 30px 40px;
     border-top: 5px solid $second-color;
-    &:hover {
-      @include box-shadow($radius:50px);
-    }
-    &:before {
+    @include transition();
+    &:after {
       content: '';
       position: absolute;
-      right: 15px;
+      right: 0;
       top: 0;
-      border: 7px solid transparent;
-      border-top: 7px solid $second-color;
-      border-right: 7px solid $second-color;
+      border-left: 10px solid transparent;
+      border-top: 10px solid $second-color;
     }
     h2:before {content: none;}
     .monthly {
@@ -63,6 +61,13 @@
         padding-left: 20px;
         line-height: 2.5;
       }
+    }
+    &:hover {
+      @include box-shadow($radius:50px);
+      -webkit-transform: scale(1.01);
+      -moz-transform: scale(1.01);
+      -o-transform: scale(1.01);
+      transform: scale(1.01);
     }
   }
 }
