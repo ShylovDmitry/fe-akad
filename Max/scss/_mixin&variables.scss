@@ -16,36 +16,23 @@ $screen-lg-min: 1200px !default;
 }
 
 @mixin background-position-x($x) {
-  @if $x == 0 {
+  @if $x == 0 {$x:$x} @else {$x:$x+px}
     -ms-background-position: $x;
     background-position: $x;
-  } @else {
-    -ms-background-position: $x+px;
-    background-position: $x+px;
-  }
 }
 
 @mixin icon($width, $x) {
   width: $width+px;
-  @if $x == 0 {
-    -ms-background-position: $x;
-    background-position: $x;
-  } @else {
-    -ms-background-position: $x+px;
-    background-position: $x+px;
-  }
+  @if $x == 0 {$x:$x} @else {$x:$x+px}
+  -ms-background-position: $x;
+  background-position: $x;
 }
 
 @mixin border-radius($radius) {
-  @if $radius == 0 {
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    border-radius: $radius;
-  } @else {
-    -webkit-border-radius: $radius+px;
-    -moz-border-radius: $radius+px;
-    border-radius: $radius+px;
-  }
+  @if $radius == 0 {$radius:$radius} @else {$radius:$radius+px}
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
 }
 
 @mixin box-shadow($x:0, $y:0, $radius:10px, $color:rgba(0,0,0,.25)) {
