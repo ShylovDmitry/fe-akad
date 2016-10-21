@@ -1,7 +1,7 @@
 .blog {
   margin-top: 150px;
 
-  .col-md-8 {
+  .col-lg-7 {
 
     img {
       margin-bottom: 30px;
@@ -60,14 +60,14 @@
       text-decoration: none;
       color: $hcolor;
     }
-    a:hover {
+     a:hover {
       text-decoration: none;
       color: $special-color;
       transition: 0.3s;
     }
   }
 
-  .col-md-3 {
+  .col-lg-4 {
 
     input {
       border: 1px solid lightgrey;

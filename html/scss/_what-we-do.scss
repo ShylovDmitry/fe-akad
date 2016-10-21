@@ -2,15 +2,20 @@
   margin: 150px 0;
   .col-md-12 {
     h2 {
-      background: bottom left url("../img/shadow.png") no-repeat;
-      background-size: 90px;
-      background-position: 43% 20px;
       padding: 0 0 5px 5px;
       font-size: 40px;
       font-weight: bold;
       text-transform: uppercase;
       color: $hcolor;
       text-align: center;
+    }
+    h2:before {
+      content: '';
+      background: #7beec7;
+      width: 90px;
+      height: 27px;
+      display: inline-block;
+      margin: 0 -92px -10px 0;
     }
     p {
       text-align: center;
@@ -39,7 +44,7 @@
       float:left;
       list-style-type: none;
       padding: 0;
-      padding-right:20%;
+      padding-right:12%;
 
       li {
         background: left url("../img/icon-hint.png") no-repeat;

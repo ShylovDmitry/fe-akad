@@ -2,10 +2,16 @@
 <html lang="eu">
 <head>
     <title>Fe-akad</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="scss/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity=
             "sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+
+
+
+
 </head>
 
 <body>
@@ -13,11 +19,11 @@
     <div class="header-nav">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-1 col-md-offset-1 col-sm-1 col-sm-offset-1">
+                <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-1 col-sm-offset-1">
                     AKAD.
                 </div>
 
-                <div class="col-md-5 col-md-offset-5 col-sm-8 col-sm-offset-2">
+                <div class="col-lg-7 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
                     <ul class="list-inline">
                         <li><a href="mainpage.html">Home</a></li>
                         <li><a href="about.html">About us</a></li>
@@ -174,35 +180,65 @@
 
 <section class="info">
     <div class="container">
-        <div class="row slideanim">
-            <div class="col-md-6 col-sm-3">
-                <img src="img/ava-review.png">
+        <div class="row">
+            <div class="col-md-6 col-sm-3 text-center">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators slideanim">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner slideanim" role="listbox">
+                        <div class="item active">
+                            <img src="img/ava-review.png">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam
+                            </p>
+                            <button class="btn btn-default btn-sm">John doe</button>
+                        </div>
+                        <div class="item">
+                            <img src="img/ava-review.png">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam
+                            </p>
+                            <button class="btn btn-default btn-sm">John doe</button>
+                        </div>
+                        <div class="item">
+                            <img src="img/ava-review.png">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam
+                            </p>
+                            <button class="btn btn-default btn-sm">John doe</button>
+                        </div>
+                        <div class="item">
+                            <img src="img/ava-review.png">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam
+                            </p>
+                            <button class="btn btn-default btn-sm">John doe</button>
+                        </div>
+                    </div>
+                 </div>
             </div>
-            <div class="col-md-2 col-sm-3">
+
+            <div class="col-md-2 col-sm-3 slideanim">
                 <img src="img/company-1.png">
             </div>
-            <div class="col-md-2 col-sm-3">
+            <div class="col-md-2 col-sm-3 slideanim">
                 <img src="img/company-2.png">
             </div>
-            <div class="col-md-2 col-sm-3">
+            <div class="col-md-2 col-sm-3 slideanim">
                 <img src="img/company-3.png">
             </div>
-        </div>
-        <div class="row slideanim">
-            <div class="col-md-6">
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat
-                </p>
-                <button class="btn btn-default btn-sm">John doe</button>
-            </div>
-            <div class="col-md-2 col-sm-4">
+            <div class="col-md-2 col-sm-4 slideanim">
                 <img src="img/company-4.png">
             </div>
-            <div class="col-md-2 col-sm-4">
+            <div class="col-md-2 col-sm-4 slideanim">
                 <img src="img/company-5.png">
             </div>
-            <div class="col-md-2 col-sm-4">
+            <div class="col-md-2 col-sm-4 slideanim">
                 <img src="img/company-6.png">
             </div>
         </div>
@@ -212,11 +248,11 @@
 <section class="join-us">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-lg-5">
                     <h2>You think we're cool ? Let's work together</h2>
                     <button class="btn btn-default btn-lg">Get in touch</button>
                 </div>
-                <div class="col-md-6 col-md-offset-1">
+                <div class="col-lg-6 col-md-offset-1">
                     <h3>Stay informed with our
                             <br>
                         newsletter
@@ -235,7 +271,7 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-7">
                 <ul class="list-inline">
                     <li><a href="mainpage.html">Home</a></li>
                     <li><a href="about.html" >About Us</a></li>
@@ -245,12 +281,12 @@
                     <li><a href="contacts.html">Contact us</a></li>
                 </ul>
             </div>
-            <div class="col-md-4 col-md-offset-2">
+            <div class="col-lg-5">
                 Created by Ohura S. 2016. All rights reserved
             </div>
         </div>
         <div class="row">
-            <div class="col-md-2 col-md-offset-10">
+            <div class="col-lg-3 col-lg-offset-9">
                 <ul class="list-inline">
                     <li><a href="#"><img src="img/facebook.png"></a></li>
                     <li><a href="#"><img src="img/twitter.png"></a></li>
@@ -266,7 +302,8 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/elements-slide.js"></script>
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 </html>

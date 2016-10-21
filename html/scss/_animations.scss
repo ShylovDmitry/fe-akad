@@ -4,9 +4,13 @@
   /* The name of the animation */
   animation-name: slide;
   -webkit-animation-name: slide;
+  -moz-animation-name: slide;
+  -o-animation-name: slide;
   /* The duration of the animation */
   animation-duration: 2s;
   -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
   /* Make the element visible */
   visibility: visible;
 }
@@ -31,6 +35,29 @@
     opacity: 1;
     -webkit-transform: translateY(0%);
   }
+
+}
+@-moz-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+
+}
+@-o-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+
 }
 
 

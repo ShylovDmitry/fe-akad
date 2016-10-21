@@ -17,11 +17,15 @@
     text-decoration: none;
     color: black
   }
-  .col-md-1 {
+  .col-lg-1 {
     text-transform: uppercase;
     font-size: 20px;
   }
-  .col-md-5 {
+  .col-lg-7 {
+      ul {
+        float:right;
+        padding-right: 40px;
+      }
     a {
       text-transform: uppercase;
       padding-right: 10px;
@@ -43,7 +47,7 @@
     h3{
       text-transform: uppercase;
       padding:7px 0;
-      margin:0 47%;
+      margin:0 46%;
       background-color:$special-color;
       font-weight: bold;
     }

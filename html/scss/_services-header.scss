@@ -17,10 +17,14 @@
     text-decoration: none;
     color: black
   }
-  .col-md-1 {
+  .col-lg-1 {
     font-size: 20px;
   }
-  .col-md-5 {
+  .col-lg-7 {
+    ul{
+      float:right;
+      padding-right: 40px;
+    }
     a {
       padding-right: 10px;
       font-size: 15px;
