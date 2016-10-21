@@ -7,7 +7,7 @@
   }
   .post-data {
     background: $second-color;
-    @include ffM;
+    @include font-Montserrat-bold-upp;
     color: #fff;
     padding: 5px 15px;
   }
@@ -29,7 +29,7 @@
     margin-bottom: 20px;
   }
   a.more {
-    @include ffM;
+    @include font-Montserrat-bold-upp;
     background: url("../img/post-more.png") center right no-repeat;
     padding-right: 15px;
     position: relative;
@@ -52,7 +52,7 @@
 .post_nav {
   margin-bottom: 50px;
   a {
-    @include ffM;
+    @include font-Montserrat-bold-upp;
     font-size: 12px;
     &.prev {
       padding-right: 20px;
@@ -166,7 +166,7 @@
     color: $third-color;
     padding: 7px 15px;
     margin-bottom: 5px;
-    @include ffM;
+    @include font-Montserrat-bold-upp;
     font-size: 12px;
     display: inline-block;
     @include transition();

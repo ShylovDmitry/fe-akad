@@ -32,10 +32,10 @@
       display: block;
       margin: 0 auto 30px auto;
     }
-    &.service-icon-puls:before {@include bgpx(0);}
-    &.service-icon-limit:before {@include bgpx(-67);}
-    &.service-icon-idea:before {@include bgpx(-134);}
-    &.service-icon-support:before {@include bgpx(-201);}
+    &.service-icon-puls:before {@include background-position-x(0);}
+    &.service-icon-limit:before {@include background-position-x(-67);}
+    &.service-icon-idea:before {@include background-position-x(-134);}
+    &.service-icon-support:before {@include background-position-x(-201);}
   }
 }
 
@@ -56,7 +56,7 @@
     }
     h2:before {content: none;}
     .monthly {
-      @include ffM;
+      @include font-Montserrat-bold-upp;
       color: #fff;
       background: $second-color;
       padding: 7px 25px;

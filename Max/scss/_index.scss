@@ -7,10 +7,9 @@
   i {
     font-style: normal;
     background: $second-color;
-    @include ffM;
+    @include font-Montserrat-bold-upp;
     font-size: 18px;
     padding: 5px 15px;
-    text-transform: uppercase;
     display: block;
     width: 100px;
     margin: auto auto -4px;
@@ -87,10 +86,10 @@
       display: block;
       margin-bottom: 15px;
     }
-    &.icon-unlim:before {@include bgpx(0);}
-    &.icon-design:before {@include bgpx(-35);}
-    &.icon-e:before {@include bgpx(-70);}
-    &.icon-custom:before {@include bgpx(-105);}
+    &.icon-unlim:before {@include background-position-x(0);}
+    &.icon-design:before {@include background-position-x(-35);}
+    &.icon-e:before {@include background-position-x(-70);}
+    &.icon-custom:before {@include background-position-x(-105);}
   }
   ul {
     text-transform: uppercase;
@@ -108,7 +107,7 @@
       &:before {background: none;}
     }
     ul {
-      @include ffM;
+      @include font-Montserrat-bold-upp;
       list-style: none;
       padding-left: 0;
       margin-top: 15px;

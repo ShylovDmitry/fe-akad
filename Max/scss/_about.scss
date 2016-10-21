@@ -14,12 +14,12 @@
       vertical-align: middle;
       margin-right: 20px;
     }
-    &.some-icon-responsive:before {@include bgpx(0);}
-    &.some-icon-unlim:before {@include bgpx(-40);}
-    &.some-icon-wp:before {@include bgpx(-81);}
-    &.some-icon-e:before {@include bgpx(-122);}
-    &.some-icon-design:before {@include bgpx(-160);}
-    &.some-icon-support:before {@include bgpx(- 200);}
+    &.some-icon-responsive:before {@include background-position-x(0);}
+    &.some-icon-unlim:before {@include background-position-x(-40);}
+    &.some-icon-wp:before {@include background-position-x(-81);}
+    &.some-icon-e:before {@include background-position-x(-122);}
+    &.some-icon-design:before {@include background-position-x(-160);}
+    &.some-icon-support:before {@include background-position-x(- 200);}
   }
   .block-clear {margin-bottom: 50px;}
 }
@@ -52,7 +52,7 @@
         padding: 5px 5px;
         font-size: 12px;
         color: #fff;
-        @include ffM;
+        @include font-Montserrat-bold-upp;
         margin-top: 20px;
         display: inline-block;
         @include transition($delay:.6);

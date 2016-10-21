@@ -1,79 +1,5 @@
-$main-color: #60606e;
-$second-color: #7beec7;
-$third-color: #999;
-$screen-xs-min: 480px !default;
-$screen-sm-min: 768px !default;
-$screen-md-min: 992px !default;
-$screen-lg-min: 1200px !default;
-
-@mixin ffM {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-@mixin ffO {
-  font-family: 'Open sans', sans-serif;
-}
-
-@mixin bgpx($x) {
-  -ms-background-position: $x+px;
-  background-position: $x+px;
-}
-
-@mixin icon($width, $x) {
-  width: $width+px;
-  -ms-background-position-x: $x+px;
-  background-position-x: $x+px;
-}
-
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius+px;
-  -moz-border-radius: $radius+px;
-  border-radius: $radius+px;
-}
-
-@mixin box-shadow($x:0, $y:0, $radius:10px, $color:rgba(0,0,0,.25)) {
-  -webkit-box-shadow: $x $y $radius $color;
-  -moz-box-shadow: $x $y $radius $color;
-  box-shadow: $x $y $radius $color;
-}
-
-@mixin placeholder($color:#ccc){
-  &::-webkit-input-placeholder {color:$color; text-transform: uppercase;}
-  &::-moz-placeholder {color:$color; text-transform: uppercase;}
-  &:-moz-placeholder {color:$color; text-transform: uppercase;}
-  &:-ms-input-placeholder {color:$color; text-transform: uppercase;}
-}
-
-@mixin transition($property:all, $duration:.2, $function:ease-out, $delay:0) {
-  -webkit-transition-property: $property;
-  -webkit-transition-duration: $duration+s;
-  -webkit-transition-timing-function: $function;
-  -webkit-transition-delay: $delay+s;
-  -moz-transition-property: $property;
-  -moz-transition-duration: $duration+s;
-  -moz-transition-timing-function: $function;
-  -moz-transition-delay: $delay+s;
-  -o-transition-property: $property;
-  -o-transition-duration: $duration+s;
-  -o-transition-timing-function: $function;
-  -o-transition-delay: $delay+s;
-  transition-property: $property;
-  transition-duration: $duration+s;
-  transition-timing-function: $function;
-  transition-delay: $delay+s;
-}
-
-@mixin transform ($function) {
-  -webkit-transform: $function;
-  -moz-transform: $function;
-  -o-transform: $function;
-  transform: $function;
-}
-
-
 h1, h2, h3, h4, h5 {
-  @include ffM;
+  @include font-Montserrat-bold-upp;
   color: $main-color;
 }
 
@@ -93,7 +19,7 @@ h2 {
 
 
 html body, a, p{
-  @include ffO;
+  @include font-Open-sans;
   color: $main-color;
   font-size: 14px;
 }
@@ -150,7 +76,7 @@ header {
         &+.icon-bar {margin-top: 7px;}
         &:nth-child(1) {width: 30px}
         &:nth-child(2) {width: 15px}
-        &:nth-child(3) {width: 30/4*3px;}
+        &:nth-child(3) {width: 23px;}
       }
       &:focus, &:hover {
         background: none;
@@ -168,7 +94,7 @@ header {
     li > a {
       position: relative;
       color: $main-color;
-      @include ffM;
+      @include font-Montserrat-bold-upp;
       text-align: right;
       padding-right: 45px;
       @media (min-width: $screen-sm-min) {
@@ -206,8 +132,7 @@ header {
   padding-top: 215px;
   h2:before {content: none;}
   .description {
-    @include ffM;
-    text-transform: uppercase;
+    @include font-Montserrat-bold-upp;
   }
 }
 
