@@ -36,7 +36,7 @@
 
 
     h3 {
-      margin-top:0px;
+      margin-top:0;
       color:$hcolor;
       font-size: 27px;
       line-height: 45px;
@@ -51,13 +51,43 @@
       font-weight: lighter;
       margin-bottom: 0;
     }
-    input {
+
+    input:focus ~ .floating-label,
+    input:not(:focus):valid ~ .floating-label{
+      top: 69%;
+      left: 35px;
+      font-size: 11px;
+      opacity: 1;
+      font-weight: bold;
+      padding:0 5px;
+      color: $special-color;
+
+    }
+    .form-control:focus {
+      border-color: lightgray;
+      box-shadow: none;
+    }
+
+    .form-control {
       height:60px;
       width:80%;
       border-radius: 0;
       padding-left:30px;
       margin-top:15px;
       margin-left:-5px;
+    }
+
+    .floating-label {
+      z-index: 1;
+      background-color:white;
+      padding-bottom: 1px;
+      text-transform: uppercase;
+      position: absolute;
+      pointer-events: none;
+      left: 50px;
+      top: 78.5%;
+      transition: 0.2s ease all;
+      color:lightgray;
     }
 
     .btn-lg {

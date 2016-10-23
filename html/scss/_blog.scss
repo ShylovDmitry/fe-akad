@@ -60,10 +60,11 @@
       text-decoration: none;
       color: $hcolor;
     }
-     a:hover {
+     a:hover span {
       text-decoration: none;
       color: $special-color;
       transition: 0.3s;
+      margin-left: 15px;
     }
   }
 
@@ -151,6 +152,7 @@
       margin-bottom: 0;
       padding-bottom: 0;
     }
+
     p {
       color: #c4c4c4;
 
@@ -162,14 +164,25 @@
       padding: 0;
 
       li {
-        color: gray;
         border-bottom: 2px solid lightgray;
         padding: 20px 10px;
+
 
         span {
           float: right;
         }
       }
+      li:hover {
+        border-bottom: 2px solid $special-color;
+        padding: 20px 10px;
+        transition: 0.9s;
+
+      }
+      a{
+        text-decoration: none;
+        color: gray;
+      }
+
     }
   }
   .tags {
@@ -177,12 +190,25 @@
       li {
         background-color: #dddddd;
         color: grey;
-        padding: 5px 25px;
+        padding: 5px 0;
         text-transform: uppercase;
         font-weight: bold;
         margin-right: 5px;
         margin-top: 5px;
       }
+      a{
+        text-decoration: none;
+        color: gray;
+        padding:6px 25px;
+
+
+      }
+      a:hover{
+        transition: 0.5s;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        color:black;
+      }
+
     }
   }
   .archives {
@@ -198,6 +224,15 @@
         span {
           float: right;
         }
+      }
+      li:hover {
+        border-bottom: 2px solid $special-color;
+        padding: 20px 10px;
+        transition: 0.9s;
+      }
+      a{
+        text-decoration: none;
+        color: gray;
       }
     }
   }

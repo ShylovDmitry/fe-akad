@@ -31,6 +31,21 @@
       padding-right: 10px;
       font-size: 15px;
     }
+    a::before {
+      content: "";
+      border-top:0 solid $hcolor;
+      width:50%;
+      display:inline-block;
+      margin-bottom: -10px;
+    }
+    a:hover:before {
+      content: "";
+      border-top:1px solid $hcolor;
+      width:50%;
+      display:inline-block;
+      margin-bottom: 6px;
+      transition: 0.3s;
+    }
   }
   .col-md-12 {
     padding:200px 0 ;
@@ -62,6 +77,9 @@
     }
   }
   .col-md-6 {
+    img{
+      width:100%;
+    }
     h2 {
       background: bottom left url("../img/shadow.png") no-repeat;
       background-size: 90px;
@@ -87,6 +105,7 @@
       border: none;
       border-radius: 0;
       float:right;
+      margin-bottom: 150px;
     }
     .btn:hover {
       color: $special-color;

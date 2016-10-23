@@ -1,4 +1,3 @@
-
 .header-nav {
   font-weight: bold;
   color: $hcolor;
@@ -9,35 +8,52 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-    a {
-      color: $hcolor;
-      text-decoration: none;
+  a {
+    color: $hcolor;
+    text-decoration: none;
 
+  }
+  a:hover {
+    text-decoration: none;
+    color: black
+  }
+
+  .col-lg-1 {
+    font-size: 20px;
+  }
+  .col-lg-7 {
+    ul{
+      float:right;
+      padding-right: 40px;
     }
-    a:hover {
-      text-decoration: none;
-      color: black
+    a {
+      text-transform: uppercase;
+      padding-right: 10px;
+      font-size: 15px;
     }
-    .col-lg-1 {
-      font-size: 20px;
+    a::before {
+      content: "";
+      border-top:0 solid $hcolor;
+      width:50%;
+      display:inline-block;
+      margin-bottom: -10px;
     }
-    .col-lg-7 {
-      ul {
-        float:right;
-        padding-right: 40px;
-      }
-      a {
-        padding-right: 10px;
-        font-size: 15px;
-      }
+    a:hover:before {
+      content: "";
+      border-top:1px solid $hcolor;
+      width:50%;
+      display:inline-block;
+      margin-bottom: 6px;
+      transition: 0.3s;
     }
-    .col-md-12 {
-      padding:200px 0 ;
-      text-align: center;
-      h1 {
-        font-weight: bold;
-        font-size: 45px;
-      }
+  }
+  .col-md-12 {
+    padding:200px 0 ;
+    text-align: center;
+    h1 {
+      font-weight: bold;
+      font-size: 45px;
     }
+  }
 
 }
