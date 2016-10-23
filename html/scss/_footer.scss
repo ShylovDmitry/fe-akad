@@ -14,21 +14,20 @@ footer {
           }
           a:hover{
             text-decoration: none;
-            color:$special-color;
+            color: #adadad;
           }
           a::after {
             content: "";
-            border-bottom:0 solid $special-color;
-            width:50%;
+            border-bottom:1px solid $special-color;
+            width:1%;
             display:inline-block;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
           }
           a:hover:after {
             content: "";
             border-bottom:1px solid $special-color;
             width:50%;
             display:inline-block;
-            margin-bottom: 4px;
             transition: 0.2s;
           }
         }

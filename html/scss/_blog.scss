@@ -75,7 +75,7 @@
       height: 40px;
       border-radius: 0;
       padding-left: 25px;
-      padding-right: 142px;
+      padding-right: 40%;
       background-color: #f6f6f6;
 
     }
@@ -90,25 +90,43 @@
       padding-bottom: 15px;
       font-weight: bold;
     }
+    .carousel-indicators {
+      bottom:270px;
+      width:100%;
+      left:29%;
+
+      li {
+        width:32%;
+        border-radius: 0;
+        border:0;
+        border-bottom:3px solid lightgray;
+        height:40px;
+        margin-left:-6px;
+      }
+      li.active {
+        background-color: transparent;
+        margin-bottom:1px;
+        border-bottom: 3px solid $special-color;
+      }
+    }
   }
   .posts {
     ul {
-      margin-left: 5px;
+      width:100%;
+      margin-left: 4px;
       margin-bottom: 40px;
 
       li {
-        padding: 0 20px;
-        border-bottom: 3px solid lightgray;
+        width:32%;
         color: gray;
         text-transform: uppercase;
         font-weight: bold;
         margin-left: -4px;
+        text-align: center;
 
       }
       .active {
-        padding-left: 30px;
         color: $hcolor;
-        border-bottom: 3px solid $special-color;
       }
     }
   }

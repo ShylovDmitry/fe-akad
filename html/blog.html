@@ -28,7 +28,7 @@
                         <li><a href="mainpage.html">Home</a></li>
                         <li><a href="about.html">About us</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="mainpage.html#section1">Portfolio</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contacts.html">Contact us</a></li>
                     </ul>
@@ -105,24 +105,64 @@
                     <input type="search" placeholder="SEARCH...">
                     <span class="glyphicon glyphicon-search"></span>
                 </form>
-                <div class="posts slideanim">
+                <div class="posts">
                     <h5>Posts</h5>
+                    <div id="blogCarousel" class="carousel slide">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#blogCarousel" data-slide-to="1"></li>
+                            <li data-target="#blogCarousel" data-slide-to="2"></li>
+                        </ol>
                         <ul class="list-inline">
                             <li class="active">Latest</li>
                             <li>Popular</li>
                             <li>Comments</li>
                         </ul>
-                    <div class="photo-post-1">
-                        <h5>Magna Mollis Ultricies</h5>
-                            <p>3th oct 2012</p>
-                    </div>
-                    <div class="photo-post-2">
-                        <h5>Magna Mollis Ultricies</h5>
-                            <p>3th oct 2012</p>
-                    </div>
-                    <div class="photo-post-3">
-                        <h5>Magna Mollis Ultricies</h5>
-                            <p>3th oct 2012</p>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <div class="photo-post-1">
+                                    <h5>Magna Mollis Ultricies</h5>
+                                    <p>3th oct 2012</p>
+                                </div>
+                                <div class="photo-post-2">
+                                    <h5>Magna Mollis Ultricies</h5>
+                                    <p>3th oct 2012</p>
+                                </div>
+                                <div class="photo-post-3">
+                                    <h5>Magna Mollis Ultricies</h5>
+                                    <p>3th oct 2012</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="photo-post-1">
+                                    <h5>Magna Mollis Ultricies</h5>
+                                    <p>3asda</p>
+                                </div>
+                                <div class="photo-post-2">
+                                    <h5>Magna Mollis Ultricies</h5>
+                                    <p>3asdas</p>
+                                </div>
+                                <div class="photo-post-3">
+                                    <h5>Magna Mollis Ultricies</h5>
+                                    <p>asdasd2</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="photo-post-1">
+                                    <h5>Magna Mollis Ultricies</h5>
+                                    <p>3asda</p>
+                                </div>
+                                <div class="photo-post-2">
+                                    <h5>Magna Mollis Ultricies</h5>
+                                    <p>3asdas</p>
+                                </div>
+                                <div class="photo-post-3">
+                                    <h5>Magna Mollis Ultricies</h5>
+                                    <p>asdasd2</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="categories slideanim">
@@ -164,11 +204,11 @@
 <section class="join-us">
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 col-md-12">
+            <div class="col-lg-4 col-md-12">
                 <h2>You think we're cool ? Let's work together</h2>
                 <button class="btn btn-default btn-lg">Get in touch</button>
             </div>
-            <div class="col-lg-6 col-md-offset-1 col-md-10">
+            <div class="col-lg-8 col-md-10">
                 <h3>Stay informed with our
                     <br>
                     newsletter
@@ -193,7 +233,7 @@
                     <li><a href="mainpage.html">Home</a></li>
                     <li><a href="about.html" >About Us</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="mainpage.html#section1">Portfolio</a></li>
+                    <li><a href="portfolio.html"">Portfolio</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contacts.html">Contact us</a></li>
                 </ul>
@@ -234,6 +274,8 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/elements-slide.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
 </body>
