@@ -9,24 +9,29 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+
     a {
       color: $hcolor;
       text-decoration: none;
 
     }
+
     a:hover {
       text-decoration: none;
       color: black
     }
-    .col-md-1 {
+
+    .col-lg-1 {
       font-size: 20px;
     }
-    .col-md-4 {
+
+    .col-lg-6 {
       a {
         padding-right: 10px;
         font-size: 15px;
       }
     }
+
     .col-md-12 {
       padding:200px 0 ;
       text-align: center;

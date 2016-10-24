@@ -1,0 +1,259 @@
+.blog {
+  margin-top: 150px;
+
+  .col-lg-7 {
+
+    img {
+      margin-bottom: 30px;
+      width:100%;
+    }
+    ul {
+
+      li {
+        padding-left: 5px;
+
+        b {
+          padding: 5px 20px;
+          background-color: $special-color;
+          text-transform: uppercase;
+          color: white;
+          font-weight: lighter;
+          font-size: 12px;
+        }
+      }
+      .glyphicon-comment {
+        color: grey;
+
+      }
+      .glyphicon-heart {
+        color: #d30001;
+        opacity: 0.6;
+
+      }
+
+    }
+    h4 {
+      color: $hcolor;
+      text-transform: uppercase;
+      padding: 10px 0;
+      font-weight: bold;
+    }
+    p {
+      font-size: 14px;
+      color: #808080;
+      line-height: 30px;
+      font-weight: lighter;
+      padding-bottom: 20px;
+    }
+    h5 {
+      font-size: 15px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 100px;
+
+      span {
+        padding-left: 10px;
+        font-size: 10px;
+
+      }
+    }
+    a {
+      text-decoration: none;
+      color: $hcolor;
+    }
+     a:hover span {
+      text-decoration: none;
+      color: $special-color;
+      transition: 0.3s;
+      margin-left: 15px;
+    }
+  }
+
+  .col-lg-4 {
+
+    input {
+      border: 1px solid lightgrey;
+      height: 40px;
+      border-radius: 0;
+      padding-left: 25px;
+      padding-right: 40%;
+      background-color: #f6f6f6;
+
+    }
+    .glyphicon-search {
+      margin-left: -40px;
+      color: #959595;
+    }
+    h5 {
+      color: $hcolor;
+      text-transform: uppercase;
+      padding-top: 40px;
+      padding-bottom: 15px;
+      font-weight: bold;
+    }
+    .carousel-indicators {
+      bottom:270px;
+      width:100%;
+      left:29%;
+
+      li {
+        width:32%;
+        border-radius: 0;
+        border:0;
+        border-bottom:3px solid lightgray;
+        height:40px;
+        margin-left:-6px;
+      }
+      li.active {
+        background-color: transparent;
+        margin-bottom:1px;
+        border-bottom: 3px solid $special-color;
+      }
+    }
+  }
+  .posts {
+    ul {
+      width:100%;
+      margin-left: 4px;
+      margin-bottom: 40px;
+
+      li {
+        width:32%;
+        color: gray;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-left: -4px;
+        text-align: center;
+
+      }
+      .active {
+        color: $hcolor;
+      }
+    }
+  }
+  .photo-post-1 {
+    background: url("../img/blog-pic-1.png") no-repeat;
+    padding-left: 100px;
+    height: 80px;
+
+    h5 {
+      padding-top: 35px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    p {
+      color: #c4c4c4;
+
+    }
+  }
+  .photo-post-2 {
+    background: url("../img/blog-pic-2.png") no-repeat;
+    padding-left: 100px;
+    height: 80px;
+
+    h5 {
+      padding-top: 35px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    p {
+      color: #c4c4c4;
+
+    }
+  }
+  .photo-post-3 {
+    background: url("../img/blog-pic-3.png") no-repeat;
+    padding-left: 100px;
+    height: 80px;
+
+    h5 {
+      padding-top: 35px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    p {
+      color: #c4c4c4;
+
+    }
+  }
+  .categories {
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        border-bottom: 2px solid lightgray;
+        padding: 20px 10px;
+
+
+        span {
+          float: right;
+        }
+      }
+      li:hover {
+        border-bottom: 2px solid $special-color;
+        padding: 20px 10px;
+        transition: 0.9s;
+
+      }
+      a{
+        text-decoration: none;
+        color: gray;
+      }
+
+    }
+  }
+  .tags {
+    ul {
+      li {
+        background-color: #dddddd;
+        color: grey;
+        padding: 5px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-right: 5px;
+        margin-top: 5px;
+      }
+      a{
+        text-decoration: none;
+        color: gray;
+        padding:6px 25px;
+
+
+      }
+      a:hover{
+        transition: 0.5s;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        color:black;
+      }
+
+    }
+  }
+  .archives {
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        color: gray;
+        border-bottom: 2px solid lightgray;
+        padding: 20px 10px;
+
+        span {
+          float: right;
+        }
+      }
+      li:hover {
+        border-bottom: 2px solid $special-color;
+        padding: 20px 10px;
+        transition: 0.9s;
+      }
+      a{
+        text-decoration: none;
+        color: gray;
+      }
+    }
+  }
+}
+

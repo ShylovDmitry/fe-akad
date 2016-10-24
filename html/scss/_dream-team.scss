@@ -3,9 +3,6 @@
     padding: 0;
     .col-md-12 {
       h2 {
-        background: bottom left url("../img/shadow.png") no-repeat;
-        background-size: 90px;
-        background-position: 40% 20px;
         padding: 0 0 5px 5px;
         font-size: 40px;
         font-weight: bold;
@@ -13,13 +10,22 @@
         color: $hcolor;
         text-align: center;
       }
+      h2:before {
+        content: '';
+        background: #7beec7;
+        width: 90px;
+        height: 27px;
+        display: inline-block;
+        margin: 0 -92px -10px 0;
+      }
     }
     .col-md-12 p {
       text-align: center;
       font-size: 15px;
       color: #808080;
-      line-height: 35px;
+      line-height: 30px;
       font-weight: lighter;
+      margin:0 20%;
       margin-bottom: 150px;
     }
     .col-md-3 {
@@ -29,16 +35,17 @@
       display: block;
       margin:auto;
       padding:0 0 30px 0;
+      width:90%;
     }
 
     .read-more {
       background-color: #e8e8e8;
       padding: 60px 20px;
       text-align: center;
-      margin:0 45px;
+      margin:0 25px;
 
       i {
-        font-size: 17px;
+        font-size: 15px;
         color: #808080;
         line-height: 53px;
         font-weight: lighter;
@@ -54,6 +61,7 @@
         border: none;
         border-radius: 0;
       }
+
       .btn:hover {
         color: $special-color;
         background-color: white;

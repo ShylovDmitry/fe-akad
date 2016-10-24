@@ -1,12 +1,13 @@
 .info {
-    margin: 150px 0px;
+  margin: 150px 0;
 
   img {
     display: block;
-    margin: 0 auto ;
+    margin: 0 auto;
     padding-top: 35px;
-    padding-left:10px;
+    padding-left: 10px;
   }
+
   p {
     text-align: center;
     font-size: 15px;
@@ -15,18 +16,37 @@
     font-weight: lighter;
     padding-bottom: 10px;
   }
+
   .btn-sm {
-    color:white;
-    font-size: 15px;
-    background-color:$special-color;
-    padding:10px 25px;
+    color: white;
+    font-size: 13px;
+    background-color: $special-color;
+    padding: 7px 20px;
     text-transform: uppercase;
     border: none;
     border-radius: 0;
-    margin-left:42%
   }
+
   .btn-sm:hover {
     transition: 0.9s;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .carousel-indicators {
+    bottom: -50px;
+
+    li {
+      border-radius: 0;
+      width: 18px;
+      height: 7px;
+      background-color: $hcolor;
+    }
+
+    li.active {
+      width: 30px;
+      height: 7px;
+      background-color: $special-color;
+      margin-bottom: 1px;
+    }
   }
 }

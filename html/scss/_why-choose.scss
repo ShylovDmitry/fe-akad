@@ -1,0 +1,59 @@
+.why-choose {
+
+  h2 {
+    padding: 0 0 5px 5px;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $hcolor;
+    text-align: center;
+  }
+
+  h2:before {
+    content: '';
+    background: #7beec7;
+    width: 90px;
+    height: 27px;
+    display: inline-block;
+    margin: 0 -92px -10px 0;
+  }
+
+  p {
+    text-align: center;
+    font-size: 15px;
+    color: #808080;
+    line-height: 30px;
+    font-weight: lighter;
+    padding-bottom: 120px;
+    margin:0 20%;
+  }
+
+  img {
+    display:block;
+    margin: 0 auto;
+    padding-top:20px;
+  }
+
+  h4{
+    color: $hcolor;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top:20px;
+    margin:0;
+    font-size:20px;
+  }
+
+  ul {
+    list-style-type:none;
+    padding:0;
+    margin:25px 0;
+
+   li {
+     font-weight: lighter;
+     text-transform: uppercase;
+     color:grey;
+     font-size:15px;
+     line-height: 35px;
+   }
+  }
+}
