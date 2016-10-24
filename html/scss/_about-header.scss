@@ -8,11 +8,13 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+
   a {
     color: $hcolor;
     text-decoration: none;
 
   }
+
   a:hover {
     text-decoration: none;
     color: black
@@ -21,16 +23,20 @@
   .col-lg-1 {
     font-size: 20px;
   }
+
   .col-lg-7 {
+
     ul{
       float:right;
       padding-right: 40px;
     }
+
     a {
       text-transform: uppercase;
       padding-right: 10px;
       font-size: 15px;
     }
+
     a::before {
       content: "";
       border-top:0 solid $hcolor;
@@ -38,6 +44,7 @@
       display:inline-block;
       margin-bottom: -10px;
     }
+
     a:hover:before {
       content: "";
       border-top:1px solid $hcolor;
@@ -47,9 +54,11 @@
       transition: 0.3s;
     }
   }
+
   .col-md-12 {
     padding:200px 0 ;
     text-align: center;
+
     h1 {
       font-weight: bold;
       font-size: 45px;

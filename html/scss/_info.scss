@@ -7,6 +7,7 @@
     padding-top: 35px;
     padding-left: 10px;
   }
+
   p {
     text-align: center;
     font-size: 15px;
@@ -15,6 +16,7 @@
     font-weight: lighter;
     padding-bottom: 10px;
   }
+
   .btn-sm {
     color: white;
     font-size: 13px;
@@ -24,10 +26,12 @@
     border: none;
     border-radius: 0;
   }
+
   .btn-sm:hover {
     transition: 0.9s;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   }
+
   .carousel-indicators {
     bottom: -50px;
 

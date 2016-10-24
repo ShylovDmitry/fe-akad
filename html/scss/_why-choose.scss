@@ -8,6 +8,7 @@
     color: $hcolor;
     text-align: center;
   }
+
   h2:before {
     content: '';
     background: #7beec7;
@@ -16,18 +17,23 @@
     display: inline-block;
     margin: 0 -92px -10px 0;
   }
-   p {
+
+  p {
     text-align: center;
     font-size: 15px;
     color: #808080;
     line-height: 30px;
     font-weight: lighter;
-     padding-bottom: 120px;
-     margin:0 20%;
+    padding-bottom: 120px;
+    margin:0 20%;
   }
+
   img {
+    display:block;
+    margin: 0 auto;
     padding-top:20px;
   }
+
   h4{
     color: $hcolor;
     text-transform: uppercase;
@@ -36,6 +42,7 @@
     margin:0;
     font-size:20px;
   }
+
   ul {
     list-style-type:none;
     padding:0;
@@ -49,12 +56,4 @@
      line-height: 35px;
    }
   }
-
-
-
-/*  background: bottom left url("../img/shadow.png") no-repeat;
-    background-size: 90px;
-    background-position: 40% 20px; */
-
-
 }
