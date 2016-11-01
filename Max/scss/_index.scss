@@ -86,10 +86,10 @@
       display: block;
       margin-bottom: 15px;
     }
-    &.icon-unlim:before {@include background-position-x(0);}
-    &.icon-design:before {@include background-position-x(-35);}
-    &.icon-e:before {@include background-position-x(-70);}
-    &.icon-custom:before {@include background-position-x(-105);}
+    &.icon-unlim:before {background-position: 0 0;}
+    &.icon-design:before {background-position: -35px 0;}
+    &.icon-e:before {background-position: -70px 0;}
+    &.icon-custom:before {background-position: -105px 0;}
   }
   ul {
     text-transform: uppercase;

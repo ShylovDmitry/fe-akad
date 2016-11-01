@@ -15,17 +15,10 @@ $screen-lg-min: 1200px !default;
   font-family: 'Open sans', sans-serif;
 }
 
-@mixin background-position-x($x) {
-  @if $x == 0 {$x:$x} @else {$x:$x+px}
-    -ms-background-position: $x;
-    background-position: $x;
-}
-
 @mixin icon($width, $x) {
   width: $width+px;
   @if $x == 0 {$x:$x} @else {$x:$x+px}
-  -ms-background-position: $x;
-  background-position: $x;
+  background-position: $x 0;
 }
 
 @mixin border-radius($radius) {

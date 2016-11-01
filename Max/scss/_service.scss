@@ -32,10 +32,10 @@
       display: block;
       margin: 0 auto 30px auto;
     }
-    &.service-icon-puls:before {@include background-position-x(0);}
-    &.service-icon-limit:before {@include background-position-x(-67);}
-    &.service-icon-idea:before {@include background-position-x(-134);}
-    &.service-icon-support:before {@include background-position-x(-201);}
+    &.service-icon-puls:before {background-position: 0 0;}
+    &.service-icon-limit:before {background-position: -67px 0;}
+    &.service-icon-idea:before {background-position: -134px 0;}
+    &.service-icon-support:before {background-position: -201px 0;}
   }
 }
 

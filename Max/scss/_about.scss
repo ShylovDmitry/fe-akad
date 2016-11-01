@@ -14,12 +14,12 @@
       vertical-align: middle;
       margin-right: 20px;
     }
-    &.some-icon-responsive:before {@include background-position-x(0);}
-    &.some-icon-unlim:before {@include background-position-x(-40);}
-    &.some-icon-wp:before {@include background-position-x(-81);}
-    &.some-icon-e:before {@include background-position-x(-122);}
-    &.some-icon-design:before {@include background-position-x(-160);}
-    &.some-icon-support:before {@include background-position-x(- 200);}
+    &.some-icon-responsive:before {background-position: 0 0;}
+    &.some-icon-unlim:before {background-position: -40px 0;}
+    &.some-icon-wp:before {background-position: -81px 0;}
+    &.some-icon-e:before {background-position: -122px 0;}
+    &.some-icon-design:before {background-position: -160px 0;}
+    &.some-icon-support:before {background-position: - 200px 0;}
   }
   .block-clear {margin-bottom: 50px;}
 }
