@@ -1,0 +1,356 @@
+h1, h2, h3, h4, h5 {
+  @include font-Montserrat-bold-upp;
+  color: $main-color;
+}
+
+
+h2 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  font-size: 30px;
+
+  &:before{
+    content: '';
+    display: inline-block;
+    width: 69px;
+    height: 22px;
+    margin: 0 -69px -10px 0;
+    background: #7beec7;
+  }
+}
+
+
+html body, a, p{
+  @include font-Open-sans;
+  color: $main-color;
+  font-size: 14px;
+}
+
+
+a:hover {
+  color: $main-color;
+  text-decoration: none;
+}
+
+
+ul, p { line-height: 2; }
+
+
+h1+p, .description p { line-height: 1.5; }
+
+
+button {
+  padding: 15px 30px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  background: $second-color;
+  border: none;
+  @include transition();
+
+  &:hover { @include box-shadow(); }
+
+  &:focus { outline:none; }
+
+  &.white {
+    color: $second-color;
+    background: #fff;
+  }
+}
+
+
+.bg-index {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 850px;
+  z-index:-1;
+  background: url("../img/index-main-bg.jpg") top center no-repeat;
+}
+.bg-page {
+  @extend .bg-index;
+  height: 500px;
+  background: url("../img/main-bg.jpg") top center no-repeat;
+}
+
+
+header {
+  .navbar-default {
+    background: none;
+    border: none;
+
+    .navbar-toggle {
+      margin: 0;
+      padding: 20px;
+      border: none;
+
+      .icon-bar {
+
+        & + .icon-bar { margin-top: 7px; }
+
+        &:nth-child(1) { width: 30px }
+        &:nth-child(2) { width: 15px }
+        &:nth-child(3) { width: 23px; }
+      }
+
+      &:focus,
+      &:hover {
+        background: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .navbar-brand {
+    display: block;
+    padding: 30px 50px;
+    background: url(../img/logo.png) 24px 22px no-repeat;
+  }
+
+  .nav.navbar-nav {
+    margin-top: 20px;
+
+    li > a {
+      position: relative;
+      padding-right: 45px;
+      @include font-Montserrat-bold-upp;
+      color: $main-color;
+      text-align: right;
+
+      @media (min-width: $screen-sm-min) {
+        margin-right: 20px;
+        padding: 0;
+        font-size: 12px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 11px;
+          display: inline-block;
+          width: 50%;
+          height: 1px;
+          background: $main-color;
+          opacity: 0;
+          @include transition();
+        }
+
+        &:hover {
+          color: $main-color;
+          background: none;
+          border-radius: 0;
+
+          &:before {
+            top: -2px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.main {
+  height: 500px;
+  margin-top: -100px;
+  padding-top: 215px;
+
+  h2:before { content: none; }
+
+  .description {
+    @include font-Montserrat-bold-upp;
+  }
+}
+
+
+section {
+  margin-top: 100px;
+
+  @media (min-width: $screen-sm-min) {
+    margin-top: 150px
+  }
+}
+
+
+.you_think {
+  margin-top: 100px;
+  padding: 50px 0;
+  background: $second-color;
+
+  h2 {
+    margin-top: 0;
+    line-height: 1.5;
+    color: #fff;
+  }
+
+  .white {
+    margin-bottom: 20px;
+  }
+
+  .stay {
+    padding: 20px 25px;
+    background: #fff;
+  }
+
+  h3 {
+    margin-top: 0;
+    line-height: 1.5;
+
+    & + p {
+      margin-bottom: 20px;
+      line-height: 1.5;
+      color: $third-color;
+    }
+  }
+
+  input[type=email] {
+    height: 50px;
+    margin-right: -4px;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: transparent;
+    border: #e5e5e5 1px solid;
+    border-radius: 0;
+    box-shadow: none;
+
+    & + span > button {
+      padding: 15px 50px;
+    }
+  }
+
+  #placeholder {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    color: #ccc;
+    text-transform: uppercase;
+    @include transition();
+
+    &.up {
+      top: -7px;
+      left: 7px;
+      z-index: 10;
+      padding-left: 2px;
+      padding-right: 2px;
+      font-size: 11px;
+      background: #fff;
+    }
+  }
+
+  .input-group-btn {
+    display: inline-table;
+    margin-top: 20px;
+    @media (min-width: $screen-xs-min) {
+      display: table-cell;
+      margin-top: 0;
+    }
+  }
+}
+
+
+footer {
+  margin: 50px 0 30px 0;
+  text-transform: uppercase;
+  color: #9a9a9a;
+
+  .developer {
+    display: inline-block;
+
+    a {
+      @include transition();
+
+      &:hover { color: $second-color; }
+    }
+  }
+
+  nav ul {
+    margin-bottom: 30px;
+    padding: 0;
+    list-style: none;
+
+    @media (min-width: $screen-xs-min) {
+      margin: 0;
+    }
+
+    li {
+      text-align: center;
+
+      @media (min-width: $screen-xs-min) {
+        float: left;
+
+        &:after {
+          content: '-';
+          padding: 20px;
+        }
+
+        &:last-child:after {
+          content: '';
+          padding: 0;
+        }
+      }
+    }
+
+    a {
+      position: relative;
+      color: #9a9a9a;
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        display: inline-block;
+        width: 0;
+        height: 1px;
+        background: $second-color;
+        @include transition();
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: #9a9a9a;
+
+        &:before {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+
+.social {
+  padding: 0;
+  float: right;
+  list-style: none;
+
+  li {
+    margin: 16px 16px 0;
+    float: left;
+
+    @media (min-width: $screen-sm-min) {
+      margin: 15px 0 0 15px;
+
+      &:first-child { margin-left: 0; }
+    }
+  }
+
+  a {
+    display: block;
+    height: 16px;
+    background: url("../img/icon-social.png") 0 0 no-repeat;
+    @include transition();
+
+    &:hover { @include background-position-y(-20); }
+  }
+
+  .icon-fb        { @include icon( 8,0 ); }
+  .icon-twitter   { @include icon( 17,-10 ); }
+  .icon-you-tube  { @include icon( 20,-30 ); }
+  .icon-linkedin  { @include icon( 15,-51 ); }
+  .icon-pinterest { @include icon( 17,-69 ); }
+  .icon-instagram { @include icon( 15,-88 ); }
+}

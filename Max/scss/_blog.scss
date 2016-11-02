@@ -1,0 +1,207 @@
+.post {
+  margin-bottom: 100px;
+
+  &:last-child { margin-bottom: 0; }
+
+  img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .post-data {
+    padding: 5px 15px;
+    @include font-Montserrat-bold-upp;
+    color: #fff;
+    background: $second-color;
+  }
+
+  .post-comments {
+    margin-left: 15px;
+    padding-left: 25px;
+    color: #ccc;
+    background: url("../img/post-comment.png") left bottom no-repeat;
+  }
+
+  .post-likes {
+    margin-left: 20px;
+    padding-left: 25px;
+    color: #ccc;
+    background: url("../img/post-likes.png") left center no-repeat;
+  }
+
+  h4 { margin-top: 20px; }
+
+  p {
+    margin-bottom: 20px;
+    color: $third-color;
+  }
+
+  a.more {
+    position: relative;
+    padding-right: 15px;
+    @include font-Montserrat-bold-upp;
+    background: url("../img/post-more.png") center right no-repeat;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      display: inline-block;
+      width: 0;
+      height: 1px;
+      background: $second-color;
+      @include transition();
+    }
+
+    &:hover:before { width: 50%; }
+  }
+}
+
+.post_nav {
+  margin-bottom: 50px;
+
+  a {
+    @include font-Montserrat-bold-upp;
+    font-size: 12px;
+
+    &.prev {
+      position: relative;
+      padding-right: 20px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: -35px;
+        width: 10px;
+        height: 10px;
+        background: url("../img/post-nav.png") 0 0 no-repeat;
+        @include transition();
+      }
+
+      &:hover:before {
+        left: -25px;
+        background: url("../img/post-nav-hover.png") 0 0 no-repeat;
+      }
+    }
+
+    &.next {
+      position: relative;
+      padding-left: 20px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        right: -35px;
+        width: 10px;
+        height: 10px;
+        background: url("../img/post-nav.png") -12px 0 no-repeat;
+        @include transition();
+      }
+
+      &:hover:after {
+        right: -25px;
+        background: url("../img/post-nav-hover.png") -12px 0 no-repeat;
+      }
+    }
+  }
+}
+
+.nav-bar {
+  input {
+    height: 40px;
+    font-weight: bold;
+    font-size: 12px;
+    background: #ececec;
+    @include placeholder(#bbb);
+    @include border-radius(0);
+    border: 0;
+    box-shadow: none;
+
+    &:focus {
+      background: #f6f6f6;
+      box-shadow: none;
+    }
+
+    & + span > button {
+      padding: 0 15px;
+      height: 40px;
+      background: #ececec;
+
+      &:hover {
+        @include box-shadow($radius:0);
+      }
+    }
+  }
+
+  section { margin-top: 50px;}
+
+  .posts {
+    button {
+      display: block;
+      width: 33.3333333%;
+      margin-bottom: 30px;
+      padding: 20px 0;
+      float: left;
+      color: $third-color;
+      font-size: 12px;
+      background: none;
+      border-bottom: 2px solid #e6e6e6;
+
+      &:hover {
+        @include box-shadow($radius:0);
+      }
+
+      &.posts-btn-active {
+        color: $main-color;
+        border-bottom-color: $second-color;
+      }
+    }
+
+    div {
+      display: inline-block;
+      height: 80px;
+      margin-bottom: 10px;
+
+      .min-post-hover { padding-left: 90px; }
+    }
+
+    span { font-size: 12px; }
+  }
+
+  .min-post-hover:hover {background: rgba(255,255,255,.5);}
+
+  .min-post-name1 {background: url("../img/min-post-name1.jpg") 0 0 no-repeat;}
+  .min-post-name2 {background: url("../img/min-post-name2.jpg") 0 0 no-repeat;}
+  .min-post-name3 {background: url("../img/min-post-name3.jpg") 0 0 no-repeat;}
+
+  .categories a {
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #bfbfbf;
+    @include transition();
+
+    &:hover { border-color: $second-color; }
+  }
+
+  .tags a {
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 7px 15px;
+    @include font-Montserrat-bold-upp;
+    font-size: 12px;
+    color: $third-color;
+    background: #e5e5e5;
+    @include transition();
+
+    &:hover {
+      color: $main-color;
+      background: #efefef;
+    }
+  }
+
+  .archives {
+    @extend .categories;
+  }
+}
