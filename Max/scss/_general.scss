@@ -344,7 +344,7 @@ footer {
     background: url("../img/icon-social.png") 0 0 no-repeat;
     @include transition();
 
-    &:hover { background-position: 0 -20px; }
+    &:hover { @include background-position-y(-20); }
   }
 
   .icon-fb        { @include icon( 8,0 ); }

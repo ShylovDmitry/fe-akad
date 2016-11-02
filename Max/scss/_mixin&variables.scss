@@ -27,7 +27,18 @@ $screen-lg-min: 1200px !default;
     @else { $x : $x + px }
 
   width: $width + px;
-  background-position: $x 0;
+  -ms-background-position-x: $x;
+      background-position-x: $x;
+}
+
+
+@mixin background-position-y ($y) {
+
+    @if ($y == 0) { $y : $y }
+    @else { $y : $y + px }
+
+  -ms-background-position-y: $y;
+      background-position-y: $y;
 }
 
 
@@ -51,9 +62,9 @@ $screen-lg-min: 1200px !default;
 
 @mixin placeholder($color:#ccc) {
   &::-webkit-input-placeholder { color:$color; text-transform: uppercase; }
-  &::-moz-placeholder          { color:$color; text-transform: uppercase; }
-  &:-moz-placeholder           { color:$color; text-transform: uppercase; }
-  &:-ms-input-placeholder      { color:$color; text-transform: uppercase; }
+       &:-ms-input-placeholder { color:$color; text-transform: uppercase; }
+           &::-moz-placeholder { color:$color; text-transform: uppercase; }
+            &:-moz-placeholder { color:$color; text-transform: uppercase; }
 }
 
 

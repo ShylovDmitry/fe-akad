@@ -26,3 +26,4 @@ up( g('name'), g('plName') );
 up( g('email'), g('plEmail') );
 up( g('object'), g('plObject') );
 up( g('Massage'), g('plMassage') );
+up( g('input'), g('placeholder') );
