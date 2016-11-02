@@ -1,55 +1,62 @@
 .index-main {
-  margin-top: -100px;
   height: 850px;
+  margin-top: -100px;
   .index-block {
     margin-top: 155px;
   }
   i {
-    font-style: normal;
-    background: $second-color;
-    @include font-Montserrat-bold-upp;
-    font-size: 18px;
-    padding: 5px 15px;
     display: block;
     width: 100px;
     margin: auto auto -4px;
+    padding: 5px 15px;
+    @include font-Montserrat-bold-upp;
+    font-size: 18px;
+    font-style: normal;
+    background: $second-color;
   }
   h1 {
-    border: 10px solid;
-    font-size: 48px;
-    margin: 3px 0 30px;
     display: inline-block;
+    margin: 3px 0 30px;
     padding: 10px 10px;
+    font-size: 48px;
+    border: 10px solid;
     @media (min-width: $screen-xs-min) {
       padding: 20px 35px;
     }
   }
-  p {font-size: 16px;}
+
+  p { font-size: 16px; }
 }
 
 .history {
   margin-top: -300px;
+
   @media (min-width: $screen-sm-min) {
     background: url("../img/history.png") left top no-repeat;
     -webkit-background-size: 380px;
-    background-size: 380px;
+            background-size: 380px;
   }
+
   @media (min-width: $screen-md-min) {
-    -webkit-background-size: 480px;
-    background-size: 480px;
     min-height: 500px;
+    -webkit-background-size: 480px;
+            background-size: 480px;
   }
+
   h2 {
     margin-top: 20px;
     text-align: center;
+
     @media (min-width: $screen-sm-min) {
       text-align: left;
     }
   }
+
   p {
-    font-size: 16px;
     margin-bottom: 30px;
+    font-size: 16px;
   }
+
   button {
     float: right;
     padding-left: 40px;
@@ -59,44 +66,54 @@
 
 .why {
   min-height: 690px;
+
   @media (min-width: $screen-sm-min) {
     background: url("../img/how_bg.jpg") no-repeat 400px 215px;
   }
+
   @media (min-width: $screen-md-min) {
     background-position: 550px 215px;
   }
+
   @media (min-width: $screen-lg-min) {
     background-position: right bottom;
   }
-  p {margin-bottom: 75px;}
+
+  p { margin-bottom: 75px; }
+
   .why-block {
     margin: 0 0 20px;
+
     @media (min-width: $screen-md-min) {
       margin: 20px 0 40px 35px;
     }
   }
+
   h4 {
     @extend h1;
     font-size: 18px;
+
     &:before {
       content: '';
-      background: url("../img/icon-why.png") no-repeat;
-      height: 30px;
-      width: 35px;
       display: block;
+      width: 35px;
+      height: 30px;
       margin-bottom: 15px;
+      background: url("../img/icon-why.png") no-repeat;
     }
-    &.icon-unlim:before {background-position: 0 0;}
-    &.icon-design:before {background-position: -35px 0;}
-    &.icon-e:before {background-position: -70px 0;}
-    &.icon-custom:before {background-position: -105px 0;}
+
+    &.icon-unlim:before  { background-position:      0 0; }
+    &.icon-design:before { background-position:  -35px 0; }
+    &.icon-e:before      { background-position:  -70px 0; }
+    &.icon-custom:before { background-position: -105px 0; }
   }
+
   ul {
-    text-transform: uppercase;
-    list-style-type: none;
-    padding-left: 0;
     margin-top: 15px;
+    padding-left: 0;
+    text-transform: uppercase;
     color: $third-color;
+    list-style-type: none;
   }
 }
 
@@ -104,29 +121,35 @@
   .choose_category {
     h2{
       line-height: 1.5;
-      &:before {background: none;}
+
+      &:before { background: none; }
     }
+
     ul {
+      margin-top: 15px;
+      padding-left: 0;
       @include font-Montserrat-bold-upp;
       list-style: none;
-      padding-left: 0;
-      margin-top: 15px;
     }
+
     a {
       padding: 2px 20px;
       @include transition();
+
       &.active {
         color: #fff;
         background: $second-color;
       }
     }
   }
+
   .photo {
     margin-top: 30px;
+
     li {
-      list-style: none;
       display: block;
       float: left;
+      list-style: none;
     }
   }
 }

@@ -3,137 +3,154 @@
 }
 
 .some_benefits {
-  .description {margin-bottom: 100px;}
+
+  .description { margin-bottom: 100px; }
+
   h4 {
     &:before {
       content: '';
-      background: $second-color url("../img/icon-some-benefits.png") no-repeat;
-      height: 40px;
-      width: 40px;
       display: inline-block;
-      vertical-align: middle;
+      width: 40px;
+      height: 40px;
       margin-right: 20px;
+      vertical-align: middle;
+      background: $second-color url("../img/icon-some-benefits.png") no-repeat;
     }
-    &.some-icon-responsive:before {background-position: 0 0;}
-    &.some-icon-unlim:before {background-position: -40px 0;}
-    &.some-icon-wp:before {background-position: -81px 0;}
-    &.some-icon-e:before {background-position: -122px 0;}
-    &.some-icon-design:before {background-position: -160px 0;}
-    &.some-icon-support:before {background-position: - 200px 0;}
+
+    &.some-icon-responsive:before { background-position:      0 0; }
+    &.some-icon-unlim:before      { background-position:  -40px 0; }
+    &.some-icon-wp:before         { background-position:  -81px 0; }
+    &.some-icon-e:before          { background-position: -122px 0; }
+    &.some-icon-design:before     { background-position: -160px 0; }
+    &.some-icon-support:before    { background-position: -200px 0; }
   }
-  .block-clear {margin-bottom: 50px;}
+
+  .block-clear { margin-bottom: 50px; }
 }
 
 .team {
-  .description {margin-bottom: 100px;}
+  .description { margin-bottom: 100px; }
+
   .member {
     position: relative;
     margin-bottom: 30px;
-    .member_hover {
-      opacity: 0;
-      position: absolute;
-      top: 0;
-      width: 263px;
-      height: 333px;
-      padding-top: 130px;
-      background: rgba(255,255,255,.75);
-      @include transition();
-      margin: auto;
-      left: 0;
-      right: 0;
-      h5 {
-        opacity: 0;
-        padding-top: 20px;
-        @include transition($delay:.4);
-      }
-      span {
-        opacity: 0;
-        background: $second-color;
-        padding: 5px 5px;
-        font-size: 12px;
-        color: #fff;
-        @include font-Montserrat-bold-upp;
-        margin-top: 20px;
-        display: inline-block;
-        @include transition($delay:.6);
-      }
-    }
     &:hover {
-      .member_hover {opacity: 1;}
+      .member_hover { opacity: 1; }
+
       h5 {
-        opacity: 1;
         padding-top: 0;
-      }
-      span {
         opacity: 1;
+      }
+
+      span {
         margin-top: 0;
+        opacity: 1;
       }
     }
   }
+
+  .member_hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 263px;
+    height: 333px;
+    margin: auto;
+    padding-top: 130px;
+    background: rgba(255,255,255,.75);
+    opacity: 0;
+    @include transition();
+
+    h5 {
+      padding-top: 20px;
+      opacity: 0;
+      @include transition($delay:.4);
+    }
+
+    span {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 5px 5px;
+      @include font-Montserrat-bold-upp;
+      font-size: 12px;
+      color: #fff;
+      background: $second-color;
+      opacity: 0;
+      @include transition($delay:.6);
+    }
+  }
+
   .team_read_more {
-    background: #efeff0;
-    font-size: 17px;
     padding: 65px 30px;
     vertical-align: middle;
-    p {display: inline-block;}
-    button {
-      float: right;
-    }
+    font-size: 17px;
+    background: #efeff0;
+
+    i { display: inline-block; }
+
+    button { float: right; }
   }
 }
 
 .reviews {
+
   .slide {
     margin-bottom: 50px;
     @media (min-width: $screen-sm-min) {
       margin-bottom: 0;
     }
   }
+
   .carousel-indicators {
     bottom: -40px;
     li {
-      @include border-radius(0);
-      height: 5px;
       width: 15px;
-      border: none;
+      height: 5px;
       background: $main-color;
+      border: none;
+      @include border-radius(0);
       @include transition();
       &.active {
-        border: none;
-        background: $second-color;
         width: 30px;
         margin-bottom: 1px;
+        background: $second-color;
+        border: none;
       }
     }
   }
+
   .ava {
-    @include border-radius(50);
     margin: 0 auto 20px;
+    @include border-radius(50);
   }
+
   button {
-    padding: 5px 15px;
     margin-bottom: 5px;
+    padding: 5px 15px;
   }
+
   .partner {
-    a {
-      margin: 0 auto 30px;
+    display: block;
+    width: 163px;
+    height: 98px;
+    margin: 0 auto 30px;
+    border: 1px solid #ccc;
+
+    &.archery    { background: url("../img/reviews/partners/archery.png"); }
+    &.pacificana { background: url("../img/reviews/partners/pacificana.png"); }
+    &.merchant   { background: url("../img/reviews/partners/merchant.png"); }
+    &.atelier    { background: url("../img/reviews/partners/atelier.png"); }
+    &.steak      { background: url("../img/reviews/partners/steak.png"); }
+    &.wattson    { background: url("../img/reviews/partners/wattson.png"); }
+
+    i { @include transition(); }
+
+    &:hover i {
       display: block;
-      width: 163px;
-      height: 98px;
-      border: 1px solid #ccc;
-      &.archery {background: url("../img/reviews/partners/archery.png")}
-      &.pacificana {background: url("../img/reviews/partners/pacificana.png")}
-      &.merchant {background: url("../img/reviews/partners/merchant.png")}
-      &.atelier {background: url("../img/reviews/partners/atelier.png")}
-      &.steak {background: url("../img/reviews/partners/steak.png")}
-      &.wattson {background: url("../img/reviews/partners/wattson.png")}
-      i {@include transition();}
-      &:hover i {
-        background: rgba(0,0,0,.1);
-        display: block;
-        width: 161px;
-        height: 96px;
-      }
+      width: 161px;
+      height: 96px;
+      background: rgba(0,0,0,.1);
     }
   }
 }

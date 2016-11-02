@@ -1,84 +1,96 @@
 .what_we_do {
-  .description {margin-bottom: 100px;}
   position: relative;
   overflow: hidden;
+
+  .description { margin-bottom: 100px; }
+
   ul {
-    float: left;
     margin: 50px 50px 0 0;
+    padding-left: 0;
+    float: left;
+    list-style: none;
+
     @media (min-width: $screen-sm-min) {
       margin-right: 10px;
     }
-    list-style: none;
-    padding-left: 0;
-    li{
-      background: url("../img/icon-check.png") center left no-repeat;
+
+    li {
       display: block;
       padding-left: 20px;
+      background: url("../img/icon-check.png") center left no-repeat;
     }
   }
-  img {
-
-    overflow: hidden;
-  }
+  img { overflow: hidden; }
 }
 
 .service {
   h4 {
+
     &:before {
       content: '';
-      background: url("../img/icon-servise.png") 0 0 no-repeat;
+      display: block;
       width: 67px;
       height: 57px;
-      display: block;
       margin: 0 auto 30px auto;
+      background: url("../img/icon-servise.png") 0 0 no-repeat;
     }
-    &.service-icon-puls:before {background-position: 0 0;}
-    &.service-icon-limit:before {background-position: -67px 0;}
-    &.service-icon-idea:before {background-position: -134px 0;}
-    &.service-icon-support:before {background-position: -201px 0;}
+
+    &.service-icon-puls:before    { background-position:      0 0; }
+    &.service-icon-limit:before   { background-position:  -67px 0; }
+    &.service-icon-idea:before    { background-position: -134px 0; }
+    &.service-icon-support:before { background-position: -201px 0; }
   }
 }
 
 .pricing {
+
   .description {margin-bottom: 100px;}
+
   .price_tab {
     position: relative;
     padding: 30px 30px 40px;
     border-top: 5px solid $second-color;
     @include transition();
+
     &:after {
       content: '';
       position: absolute;
-      right: 0;
       top: 0;
-      border-left: 10px solid transparent;
+      right: 0;
       border-top: 10px solid $second-color;
+      border-left: 10px solid transparent;
     }
-    h2:before {content: none;}
+
+    h2:before { content: none; }
+
     .monthly {
+      padding: 7px 25px;
       @include font-Montserrat-bold-upp;
       color: #fff;
       background: $second-color;
-      padding: 7px 25px;
     }
+
     ul {
-      padding: 55px 0;
       margin: 0;
+      padding: 55px 0;
       list-style: none;
+
       li{
-        background: url("../img/icon-check.png") center left no-repeat;
         display: block;
         padding-left: 20px;
         line-height: 2.5;
+        background: url("../img/icon-check.png") center left no-repeat;
       }
     }
+
     &:hover {
       @include box-shadow($radius:50px);
       -webkit-transform: scale(1.01);
-      -moz-transform: scale(1.01);
-      -o-transform: scale(1.01);
-      transform: scale(1.01);
+         -moz-transform: scale(1.01);
+           -o-transform: scale(1.01);
+              transform: scale(1.01);
     }
   }
+
   .price-block {margin-bottom: 20px;}
 }
